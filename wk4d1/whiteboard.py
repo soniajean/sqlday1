@@ -16,5 +16,13 @@
 # Output:
 # True
 
-def Consectutive_Indices():
-    
+def Consecutive_Indices(list, a, b):
+    x = list.index(a)
+    y = list.index(b)
+    print(x)
+    print(y)
+    if abs(x - y) == 1:
+        return True
+    else:
+        return False
+print(Consecutive_Indices([1, 6, 9, -3, 4, -78, 0], -3, 4))
